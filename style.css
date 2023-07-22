@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+
+.quick-contact{
+    background-color: #131D3B;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+}
+.items{
+    width: 100%;
+    margin: 0 10rem 0rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items ul{
+    list-style: none;
+    display: flex;
+}
+.items ul li{
+   padding: 0.3rem;
+}
+.fa-brands{
+    font-size: 1.2rem;
+    color: white;
+}
+.items ul li a .fa-brands:hover{
+    color: #0655DD;
+}
+.fa-linkedin{
+    margin-right: 3rem;
+}
+.items p{
+    color: white;
+ 
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 10rem 0rem 10rem;
+
+}
+
+.nav h1{
+    padding: 12px;
+    color: #0655DD;
+    border-radius: 8px;
+}
+
+
+.nav  ul{
+    list-style: none;
+    display: flex; 
+    align-items: center;
+}
+
+.nav ul li{
+    margin-right: 4rem;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color:  #5171FF;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5171FF;
+  margin-top: 1.2rem;
+  min-width: 20vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  left: 0;
+  z-index: 1; 
+  
+}
+
+.dropdown-content a {
+  color: #131D3B;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+.nav ul li a{
+    text-decoration: none;
+     color: #131D3B;
+     position: relative;
+     font-weight: 800;
+}
+.nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    bottom:-8px ;
+    left: 0;
+    position: absolute;
+    background-color: #5171FF;
+    border-radius: 16px;
+    transition: 0.5s;
+}
+.nav ul li a:hover::after{
+     width: 100%;
+   
+}
+.nav ul li a:hover{
+    color: #5171FF;
+}
+#select{
+    outline: 0;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    border: 0;
+}
+.section-two{
+    background-image: url(images/bak6.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+    opacity: 2;
+    height: 84vh;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    margin: 0rem 10rem 0 10rem;
+}
+
+.section-left {
+  height: 60vh;
+  margin: 4rem 0 0 0;
+  padding: 12px;
+ 
+}
+.section-left p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    max-width: 15ch;
+    color:white;
+    text-transform: capitalize;
+    line-height: 3.5rem;
+}
+.btn{
+    color:white;
+    background-color:  #266ae0;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    outline: none;
+    border: 0;
+    margin-top: 10px;
+    padding: 16px 4px;
+    font-size: 1.2rem;
+    padding: 0.7em;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:white ;
+    background-color: #0655DD;
+ 
+}
+.fa-phone{
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+#call{
+  font-size: 1rem;  
+}
+.section-right{
+    width: 42vw;
+    margin: 4rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: contain;
+    height: 70vh;
+    background-position: center calc(50% - 10px);
+}
+
+.fa-whatsapp{
+    color: white;
+    background-color: green;
+    border-radius: 50%;
+    font-size: 3rem;
+    padding: 0.2em;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    position: fixed;
+}
+
+/*-------third section---*/
+.third-section{
+    margin-top: 4rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.third-section h2{
+    color: #0655DD;
+    position: relative;
+}
+
+.third-section h2::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    position: absolute;
+    background-color: #5171FF;
+}
